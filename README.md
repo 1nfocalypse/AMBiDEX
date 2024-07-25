@@ -40,16 +40,28 @@ Otherwise, the NSA paid.
 
 # Mathematically Speaking? (Example)
 The operation of the DC-net can best be explained via the exclusive or, or XOR, function. Let a result of Heads be 1, and a result of tails be 0. Alice, Bob, and Charlie each obtain a random bit. Let A = 1, B = 0, C = 0. From here, we set up the equations
+
 $$A \oplus B \rightarrow 1 \oplus 0 = 1$$
+
 $$B \oplus C \rightarrow 0 \oplus 0 = 0$$
+
 $$C \oplus A \rightarrow 0 \oplus 1 = 1$$
+
+
 Taking these results, we set up the final equation
+```math
 $$1 \oplus 0 \oplus 1 \rightarrow 1 \oplus 1 = 0$$
+```
 Denoting that the NSA paid. However, in the same scenario, if one of the reported combinations was to be a lie, we would encounter a bitflip, yielding a result of 1. For example, if Bob paid, we find
+
 $$A \oplus B \rightarrow \lnot(1 \oplus 0) = 0$$
+
 $$B \oplus C \rightarrow 0 \oplus 0 = 0$$
+
 $$C \oplus A \rightarrow 0 \oplus 1 = 1$$
+
 $$0 \oplus 0 \oplus 1 \rightarrow 0 \oplus 1 = 1$$
+
 
 As such, we are able to determine if a member of the group sent a message, albeit not which member.
 
